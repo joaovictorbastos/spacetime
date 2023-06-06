@@ -1,0 +1,20 @@
+TUDO DENTRO DE web (pasta do projeto)
+
+
+npx create-next-app@latest web --use-npm -> atalhao para criar um novo projeto next
+
+npm run dev -> comando dentro da pasta para executar o projeto
+
+npm i @rocketseat/eslint-config -d -> Baixar configs ESLINT do rocketseat
+@rocketseat/eslint-config/react -> inserir no arquivo .eslintrc.json para habilitar
+
+npm i prettier-plugin-tailwindcss -d -> instalar o prettier para o código ficar melhor
+para isso devemos criar um arquivo "prettier.config.js" na raiz do projeto e inserir:
+module.exports = { 
+  plugins:[require('prettier-plugin-tailwindcss')],
+}
+
+
+npx create-expo-app mobile
+
+baixar a fonte que quer usar setando o layout.tsx com as fontes Roboto Baijamjuree
