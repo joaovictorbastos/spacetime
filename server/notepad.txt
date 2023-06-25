@@ -5,4 +5,15 @@ npx prisma init --datasource-provider SQLite -> comando para iniciar o prisma se
 npx prisma migrate dev -> comando para ler o schema.prisma, detecta as alterações desde a última execução e faz um his-
 tórico do banco de dados
 
-npx prisma studio -> comando para abrir a IDE do prisma
+npx prisma studio -> comando para abrir  a IDE do prisma
+
+npm i dotenv -d -> pacote para ler as variaveis de ambiente e conecte no git
+
+
+npm i axios -> request https 
+
+npm i @fastify/jwt JWT - JSON WEB TOKEN  
+
+npm i @fastify/multipart -> plugin responsável pelo upload de arquivos
+
+npm i @fastify/static -> módulo que faz com que uma pasta do backend fique pública
