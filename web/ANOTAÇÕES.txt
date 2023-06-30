@@ -1,0 +1,2 @@
+install pacote icones 
+npm i lucide-react

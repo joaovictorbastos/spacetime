@@ -1,0 +1,57 @@
+npx create-expo-app mobile -> criar app mobile
+npm run start -> comando para rodar o mobile
+
+https://www.nativewind.dev/quick-starts/expo
+Baixar o nativewind para usar o tailwind no reaact native
+npm i nativewind
+npm i tailwindcss -d
+npx tailwindcss init
+
+// tailwind.config.js
+
+module.exports = {
+- content: [],
++ content: ["./App.{js,jsx,ts,tsx}", "./<custom directory>/**/*.{js,jsx,ts,tsx}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+abrir o arquivo tsconfig.json
+{
+  "compilerOptions": {
+    "types": [
+      "nativewind/types"
+    ]
+  },
+  "extends": "expo/tsconfig.base"
+}
+
+
+instalar o eslint para mobilie
+npm i eslint @rocketseat/eslint-config -d
+
+criar o .eslintrc.json e colocar:
+{
+  "extends": [
+    "@rocketseat/eslint-config/react"
+  ]
+}
+
+instalar plugin prettier
+npm i prettier-plugin-tailwindcss -d
+
+criar 'prettier.config.js' com:
+module.exports = {
+  plugins: [require('prettier-plugin-tailwindcss')],
+}
+
+
+instalar fontes do google
+npx expo install @expo-google-fonts/roboto @expo-google-fonts/bai-jamjuree expo-font
+ 
+
+Procurara pelo react-native-svg-transformer para fazer os stripes copiados em svg no figma
+npx expo install react-native-svg
+npm i -d react-native-svg-transformer
